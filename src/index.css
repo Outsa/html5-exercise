@@ -76,7 +76,7 @@ span.table-header, div.table-row span.table-cell {
 }
 
 div.table-row span:last-child.table-cell {
-  padding: 0 24px;
+  padding: 0 24px 0 0;
 }
 
 form.table-row span.table-cell {
@@ -85,6 +85,7 @@ form.table-row span.table-cell {
 
 form.table-row span:last-child.table-cell {
   padding: 0 16px 0 0;
+  min-width: 184px;
 }
 
 span.table-header {
@@ -162,8 +163,11 @@ input:focus-within {
 .icon-button {
   background: none;
   border: 0;
-  margin-left: 32px;
   display: inline-block;
+}
+
+.icon-button:last-child {
+  margin-left: 32px;
 }
 
 .fa-arrow-up, .fa-arrow-down {
