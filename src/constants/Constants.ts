@@ -14,7 +14,7 @@ export const NAME = 'Name'
 
 export const PHONE = 'Phone number'
 
-export const EMAIL = 'Email'
+export const EMAIL = 'E-mail address'
 
 export const INITIAL_PARTICIPANT_SIZE = 20
 
