@@ -29,10 +29,12 @@ export const ParticipantProvider = ({children}: ParticipantProviderProps) => {
     const sortParticipants = (sortType: SortType) => {
         const { key, desc } = sortType
         const sorted = [...participants].sort((a, b) => {
+          const first = a[key].toString().toLowerCase()
+          const second = b[key].toString().toLowerCase()
           if (desc)
-            return b[key] > a[key] ?  1 : -1
+            return second > first ?  1 : -1
           else
-            return b[key] > a[key] ?  -1 : 1
+            return second > first ?  -1 : 1
         }
         ) 
         setParticipants(sorted)
