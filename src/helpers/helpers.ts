@@ -13,7 +13,7 @@ export const createInitialParticipants = () => Array.from(
     { id: index + 1,
       name: name,
       phone: '050' + getRandomInt(1000000, 9000000),
-      email: name.toLowerCase().replace(' ', '.') + '@gmail.com' }
+      email: name.toLowerCase().replace(' ', '.') + '@somefakemail.com' }
   ))
 
 export const validate = (participant: ParticipantType) => {
